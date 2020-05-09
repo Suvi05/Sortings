@@ -18,6 +18,7 @@ public class BubbleSort {
                 }
         }
         //Doubt: What if intArray[i] is not greater than intArray[i+1]
+        //Solution: Then without swapping it will come out of the loop and lastUnsortedIndex will get decremented
 
         System.out.println("Sorted Array");
         for (int i = 0; i < intArray.length; i++) {

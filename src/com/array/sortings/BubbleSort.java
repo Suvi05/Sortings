@@ -15,7 +15,7 @@ public class BubbleSort {
 
             for (int i = 0; i < lastUnsortedIndex; i++)
                 if (intArray[i] > intArray[i + 1]) {
-                    swap(intArray, i, i+1);
+                    swap(intArray, i, i + 1);
                 }
         }
         //Doubt: What if intArray[i] is not greater than intArray[i+1]
@@ -42,3 +42,4 @@ public class BubbleSort {
     }
 
 }
+//The End

@@ -8,10 +8,10 @@ public class MergeSort {
 
         System.out.println("Unsorted Array");
         for (int i = 0; i < intArray.length; i++) {
-                System.out.println(intArray[i]);
-            }
+            System.out.println(intArray[i]);
+        }
 
-        mergeSort(intArray,0,intArray.length);
+        mergeSort(intArray, 0, intArray.length);
 
         System.out.println("Sorted Array");
         for (int i = 0; i < intArray.length; i++) {
@@ -62,15 +62,15 @@ public class MergeSort {
         while (i < mid && j < end) {
             //Means when either i gets finished... or j get finished we drop out, as everting else which has not
             // been destroyed or over come tinn now would got added up into the last
-            temp[tempIndex++] = input[i] <= input[j]? input[i++]: input[j++];
+            temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
             //we have <=(equals to) because merge sort is stable... if we will remove this... it will become unstable
         }
 
-        System.arraycopy(input, i, input, start + tempIndex, mid-i);
+        System.arraycopy(input, i, input, start + tempIndex, mid - i);
         //tempIndex counts that how many elements we have handled
         //mid-i tells us the number of elements that we didn't copied over into the temp array from the left partition
         //2nd Optimisation (adding left over from right side directly to the array
-        System.arraycopy(temp, 0 , input, start, tempIndex);
+        System.arraycopy(temp, 0, input, start, tempIndex);
     }
 
 }

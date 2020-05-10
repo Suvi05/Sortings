@@ -40,6 +40,5 @@ public class BubbleSort {
         array[i] = array[j];
         array[j] = temp;
     }
-
 }
 //The End

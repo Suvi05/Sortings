@@ -42,7 +42,7 @@ public class QuickSort {
             //means they  have crossed
             while (i < j && input[--j] >= pivot) ;
             //Note: empty body loop
-            //We are just using this loop to descrementing j until we find an elemnt that's less than the pivot or j crosses i
+            //We are just using this loop to discrementing j until we find an element that's less than the pivot or j crosses i
             if (i < j) {
                 input[i] = input[j];
             }
